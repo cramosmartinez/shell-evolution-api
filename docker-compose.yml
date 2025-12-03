@@ -58,7 +58,9 @@ services:
     command: ["postgres", "-c", "max_connections=1000", "-c", "listen_addresses=*"]
     restart: always
     ports:
-      - "${POSTGRESS_PORT:-5432}:5432"
+      # CAMBIO REALIZADO: Usamos 5433 externo para evitar el error "address already in use"
+      # El puerto interno (derecha) se mantiene en 5432 para que la API conecte bien.
+      - "5433:5432"
     environment:
       - POSTGRES_USER=${POSTGRESS_USER:-evolution}
       - POSTGRES_PASSWORD=${POSTGRESS_PASS:-evolution}
