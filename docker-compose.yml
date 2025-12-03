@@ -1,5 +1,3 @@
-version: '3.3'
-
 services:
   # 1. EVOLUTION API
   evolution_api:
@@ -58,9 +56,9 @@ services:
     command: ["postgres", "-c", "max_connections=1000", "-c", "listen_addresses=*"]
     restart: always
     ports:
-      # CAMBIO REALIZADO: Usamos 5433 externo para evitar el error "address already in use"
-      # El puerto interno (derecha) se mantiene en 5432 para que la API conecte bien.
-      - "5433:5432"
+      # CAMBIO REALIZADO: Usamos 5445 externo.
+      # 5432 y 5433 estaban ocupados.
+      - "5445:5432"
     environment:
       - POSTGRES_USER=${POSTGRESS_USER:-evolution}
       - POSTGRES_PASSWORD=${POSTGRESS_PASS:-evolution}
