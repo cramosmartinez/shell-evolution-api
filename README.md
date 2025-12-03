@@ -15,7 +15,7 @@ Este repositorio proporciona un script Bash (`install.sh`) para instalar y confi
 ### 1. Descargar o clonar el repositorio
 
 ```bash
-git clone https://github.com/devalexcode/shell-evolution-api.git
+git clone https://github.com/cramosmartinez/shell-evolution-api
 ```
 
 ### 2. Ingresa a la carpeta del proyecto
@@ -102,7 +102,7 @@ Al finalizar, verás un mensaje indicando la URL de acceso a Evolution API:
 
 ## 👨‍💻 Autor
 
-Desarrollado por [Alejandro Robles | Devalex ](http://devalexcode.com)  
-¿Necesitas que lo haga por ti? ¡Estoy para apoyarte! 🤝 https://devalexcode.com/soluciones/evolution-api-whatsapp-en-servidor-vps
+Desarrollado por [Carlos Ramos ] 
+¿Necesitas que lo haga por ti? ¡Estoy para apoyarte! 🤝 
 
 ¿Dudas o sugerencias? ¡Contribuciones bienvenidas!
